@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Booking Module</title>
+  </head>
+  <body>
+    <div id="grid">Booking Div</div>
+    <div id="reviews_component">Booking Div</div>
+    <div id="book">Booking Div</div>
+    <div id="similar">Booking Div</div>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/lairbnb-book/bundle.js"></script>
+    <script src="https://s3-us-west-1.amazonaws.com/dj-fec/bundle.js"></script>
+    <script src="https://s3-us-west-1.amazonaws.com/lairbnb-carousel/bundle.js"></script>
+    <script src="https://s3-us-west-1.amazonaws.com/reviews-hr104-lairbnb/bundle.js"></script>
+    <script>
+      ReactDOM.render(
+        React.createElement(Grid),
+        document.getElementById('grid')
+      );
+      ReactDOM.render(
+        React.createElement(Book),
+        document.getElementById('book')
+      );
+      ReactDOM.render(
+        React.createElement(Similar),
+        document.getElementById('similar')
+      );
+    </script>
+  </body>
+</html>
